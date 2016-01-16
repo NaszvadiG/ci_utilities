@@ -1,5 +1,20 @@
 # Libraries
 
+## QR ##
+
+Library to facilitate the generation of a QR code
+
+To use the library, you must add add to your project [Bacon/BaconQrCode](https://github.com/Bacon/BaconQrCode). If you do not know how to add, I recommend installing it through composer, you can follow this [tutorial](https://philsturgeon.uk/php/2012/05/07/composer-with-codeigniter/) and install it by composer
+
+**use**
+
+    $text = 'Hello World';
+    $path = './files/qr/'.$text.'.png';
+    $this->load->library('qr');
+    $genQr = $this->qr->write($text, $path);
+
+<br><br>
+
 ## Rut ##
 
 Library to facilitate working with the Chilean rut, allows:

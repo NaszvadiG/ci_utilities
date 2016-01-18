@@ -19,7 +19,7 @@ To use the library, you must add add to your project [Bacon/BaconQrCode](https:/
 
 Library to facilitate working with the Chilean rut, allows:
 
- - Clean (erase points and screenplay)
+ - Clean (erase points and dash)
  - Validate if dv is correct.
  - Separate rut string, returns an array, position 0 is the rut, in position 1 is dv.
 

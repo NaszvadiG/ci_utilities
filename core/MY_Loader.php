@@ -18,7 +18,7 @@ class MY_Loader extends CI_Loader
      */
     public function set_view_path()
     {
-        $path = FCPATH . 'public/views/frontend/' . strtolower($this->ci->router->fetch_class()) . '/';
+        $path = FCPATH . 'public/views/' . strtolower($this->ci->router->fetch_class()) . '/';
         $this->_ci_view_paths = array(
             $path => TRUE
         );

@@ -33,7 +33,7 @@ if (!function_exists('js_url'))
      * @author Nicolas Ormeno <ni.ormeno@gmail.com>
      * @version 1.0
      */
-    function js_url($path = null)
+    function js_url($file, $path = null)
     {
         $ci =& get_instance();
         $ci->load->helper('url');
@@ -55,7 +55,7 @@ if (!function_exists('img_url'))
      * @author Nicolas Ormeno <ni.ormeno@gmail.com>
      * @version 1.0
      */
-    function img_url($path = null)
+    function img_url($file, $path = null)
     {
         $ci =& get_instance();
         $ci->load->helper('url');

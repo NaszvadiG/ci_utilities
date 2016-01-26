@@ -30,3 +30,17 @@ Library to facilitate working with the Chilean rut, allows:
     var_dump($this->rut);
 
 rut obtained from [here](http://joaquinnunez.cl/jQueryRutPlugin/generador-de-ruts-chilenos-validos.html)
+
+<br><br>
+
+## Uploader ##
+
+Library to facilitate the work of uploading files to the server:
+
+**use**
+
+    $this->load->library('Uploader');
+    $path = './files/';
+    $upload1 = $this->uploader->upload_image('{name}', $path);
+
+_{name} is the name of the post file_

@@ -47,7 +47,7 @@ _{name} is the name of the post file_
 
 <br><br>
 
-## Uploader ##
+## Zipper ##
 
 Library to facilitate zip compression
 

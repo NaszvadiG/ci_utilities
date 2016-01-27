@@ -1,5 +1,36 @@
 # Libraries
 
+## Mailer ##
+
+Library to facilitate sending SMTP email using native library of CodeIgniter
+
+**use**
+
+    // Controller
+    $mail['to']         =   'email@to.com';
+    $mail['subject']    =   'my subject';
+    $mail['data']       =   [];
+
+    // If you're using "MY_Loader", you can use $ this->load->email,
+    // otherwise you have to use $this->load->view
+    $mail['message']    =   $this->load->email('test_mail', $mail['data'], true);
+    //$mail['message']    =   $this->load->view('test_mail', $mail['data'], true);
+
+    $this->load->library('mailer');
+    $this->mailer->smtp_html($mail);
+
+    // Mailer
+    // You must place your right values to the following
+    private $senderName		=	'My Name';
+    private $senderEmail	=	'me@domain.com';
+    private $senderUser		=	'user@main.com';
+    private $senderPass		=	'my_pass';
+    private $senderHost		=	'my_email_host';
+    private $senderPort   = 465;
+    private $senderCrypt  = 'ssl';
+
+<br><br>
+
 ## QR ##
 
 Library to facilitate the generation of a QR code

@@ -87,3 +87,5 @@ Library to facilitate zip compression
     $this->load->library('zipper');
     $this->zipper->create(FCPATH.'test.zip', [FCPATH.'index.php']);
     $this->zipper->add(FCPATH.'test.zip', [FCPATH.'readme.rst', FCPATH.'license.txt']);
+
+To use the library, you must add add to your project [comodojo/zip](https://github.com/comodojo/zip). If you do not know how to add, I recommend installing it through composer, you can follow this [tutorial](https://philsturgeon.uk/php/2012/05/07/composer-with-codeigniter/) and install it by composer

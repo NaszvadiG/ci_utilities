@@ -44,3 +44,15 @@ Library to facilitate the work of uploading files to the server:
     $upload1 = $this->uploader->upload_image('{name}', $path);
 
 _{name} is the name of the post file_
+
+<br><br>
+
+## Uploader ##
+
+Library to facilitate zip compression
+
+**use**
+
+    $this->load->library('zipper');
+    $this->zipper->create(FCPATH.'test.zip', [FCPATH.'index.php']);
+    $this->zipper->add(FCPATH.'test.zip', [FCPATH.'readme.rst', FCPATH.'license.txt']);

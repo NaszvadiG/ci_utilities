@@ -2,36 +2,28 @@
 
 ## Debug Bar ##
 
-Helper to facilitate the implementation of Debug Bar
+To use the library, you must add to your project [Tan5en5/codeigniter-debugbar](https://github.com/Tan5en5/codeigniter-debugbar). You must follow the installation instructions in the repository
+
+Enable Composer (locate in application/config/config.php) :
+
+    $config['composer_autoload'] = FCPATH.'vendor/autoload.php';
+
+**use**
+
+    $this->load->helper('debug_helper');
+    debug_bar();
+
+<br><br>
+
+## Detect Agent ##
+
+Helper to facilitate the use of library user agent
 
 **use**
 
     $this->load->helper('detect_agent');
     $agent = detect_agent();
     print_r($agent);
-
-<br><br>
-
-## Path ##
-
-## Detect Agent ##
-
-Helper to facilitate the use of library user agent.
-
-To use the library, you must add to your project [Tan5en5/codeigniter-debugbar](https://github.com/Tan5en5/codeigniter-debugbar). You must follow the installation instructions in the repository
-
-Enable Composer (locate in application/config/config.php) :
-
-    ```php
-    $config['composer_autoload'] = FCPATH.'vendor/autoload.php';
-    ```
-
-**use**
-
-    ```php
-    $this->load->helper('debug_helper');
-    debug_bar();
-    ```
 
 <br><br>
 

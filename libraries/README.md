@@ -70,6 +70,7 @@ Library to facilitate working with the Chilean rut, allows:
 $params = ['rut' => '16.893.255-3'];
 $this->load->library('rut', $params);
 var_dump($this->rut);
+var_dump($this->rut->full_format);
 ```
 
 rut obtained from [here](http://joaquinnunez.cl/jQueryRutPlugin/generador-de-ruts-chilenos-validos.html)
